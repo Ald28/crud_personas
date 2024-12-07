@@ -1,7 +1,7 @@
 const express = require('express');
 const personaRoutes = require('./routes/personaRoutes');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;  // Asegúrate de que use el puerto proporcionado por Railway
 
 // Middleware
 app.use(express.json());
